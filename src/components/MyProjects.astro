@@ -1,0 +1,33 @@
+---
+import Project from "./Project.astro";
+import SoonProject from "./SoonProject.astro";
+
+const projects = [
+    {
+        title: "SNEAKERS E-Commerce",
+        description:
+            "A curated library of screenshots & interaction patterns from the world's best digital products. Gain insights, explore trends and understand competitors and best practices.",
+        live: "https://sneakers-e-commerce-app.vercel.app/",
+        source: "https://github.com/zaycevv/sneakers-e-commerce-app",
+        imageUrl: "/assets/projects/sneakers.png",
+        colors: ["#1F1F1F", "#F2F3F3", "#FFFFFF"],
+    },
+    {
+        title: "Cloud Drive",
+        description:
+            "A curated library of screenshots & interaction patterns from the world's best digital products. Gain insights, explore trends and understand competitors and best practices.",
+        live: "https://cloud-drive-app.vercel.app/",
+        source: "https://github.com/zaycevv/cloud-drive-app",
+        imageUrl: "/assets/projects/cloud.png",
+        colors: ["#1F1F1F", "#008FFD", "#FFFFFF"],
+    },
+];
+---
+
+<div>
+    <h1 class="font-semibold text-4xl text-center">My Projects</h1>
+    <div class="mt-[100px] flex flex-col gap-8">
+        {projects.map((obj) => <Project {...obj} />)}
+        <SoonProject />
+    </div>
+</div>
