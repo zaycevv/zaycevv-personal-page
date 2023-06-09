@@ -2,9 +2,19 @@
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
+    fontSize: {
+      sm: "14px",
+      base: "16px",
+      xl: "18px",
+      "2xl": "24px",
+      "3xl": "28px",
+      "4xl": "32px",
+      "5xl": "3.052rem",
+    },
     colors: {
-      backrondprimary: "#FFFFFF",
-      backrondsecondary: "#F6F6F6",
+      backrondPrimary: "#FFFFFF",
+      backrondSecondary: "#F6F6F6",
+      black: "#000000",
       gray: {
         50: "#F6F6F6",
         100: "#EEEEEE",
