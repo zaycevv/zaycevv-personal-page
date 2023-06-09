@@ -1,0 +1,50 @@
+---
+const { title, description, live, source, imageUrl, colors } = Astro.props;
+---
+
+<div
+    class="flex flex-col-reverse md:flex-row justify-between border border-black md:pl-8 md:pt-8"
+>
+    <div
+        class="max-w-[500px] px-8 pb-8 mt-10 md:mt-0 flex flex-col justify-between"
+    >
+        <div>
+            <h1 class="text-xl md:text-3xl font-semibold">{title}</h1>
+            <p class="text-sm md:text-base mt-2">{description}</p>
+            <div class="flex gap-4 mt-4">
+                <a
+                    class="py-2 px-4 border hover:border-black hover:font-semibold active:bg-gray-50 transition-all duration-200"
+                    href={live}
+                    target="_blank">Live</a
+                >
+                <a
+                    class="py-2 px-4 border hover:border-black hover:font-semibold active:bg-gray-50 transition-all duration-200"
+                    href={source}
+                    target="_blank">Source</a
+                >
+            </div>
+        </div>
+        <div class="flex gap-1 mt-10 md:mt-0">
+            <div
+                class={`w-[26px] h-[26px] border border-black `}
+                style={`background-color: ${colors[0]};`}
+            >
+            </div>
+            <div
+                class={`w-[26px] h-[26px] border border-black`}
+                style={`background-color: ${colors[1]};`}
+            >
+            </div>
+            <div
+                class={`w-[26px] h-[26px] border border-black `}
+                style={`background-color: ${colors[2]};`}
+            >
+            </div>
+        </div>
+    </div>
+    <img
+        src={imageUrl}
+        class="border border-gray-200 border-l-0 border-t-0 md:border-l md:border-t border-r-0 border-b md:border-b-0"
+        alt={title}
+    />
+</div>
