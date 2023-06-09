@@ -15,6 +15,7 @@ module.exports = {
       backrondPrimary: "#FFFFFF",
       backrondSecondary: "#F6F6F6",
       black: "#000000",
+      white: "#FFFFFF",
       gray: {
         50: "#F6F6F6",
         100: "#EEEEEE",
