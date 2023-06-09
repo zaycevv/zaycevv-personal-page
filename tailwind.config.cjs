@@ -29,9 +29,6 @@ module.exports = {
         900: "#141414",
       },
     },
-    fontFamily: {
-      sans: ["Proto Mono", "sans-serif"],
-    },
     extend: {},
   },
   plugins: [],
